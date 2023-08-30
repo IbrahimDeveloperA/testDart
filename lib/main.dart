@@ -19,26 +19,8 @@ class FlutterTutorialApp extends StatelessWidget {
             centerTitle: true,
             backgroundColor: Colors.brown[300],
           ),
-          body: RichText(
-            text: TextSpan(
-                style: TextStyle(
-                  fontSize: 30.0,
-                  fontStyle: FontStyle.italic,
-                  color: Colors.blue[400],
-                ),
-                children: <TextSpan>[
-                  TextSpan(text: "Hello"),
-                  TextSpan(
-                      text: "MIe,",
-                      style: TextStyle(color: Colors.deepOrange),
-                      children: <TextSpan>[
-                        TextSpan(
-                            text: "New text",
-                            style:
-                                TextStyle(decoration: TextDecoration.underline,color: Colors.brown))
-                      ]),
-                  TextSpan(text: "Wors,")
-                ]),
+          body: Image(
+            image: AssetImage("assets/images/img1.png"),
           ),
           floatingActionButton: FloatingActionButton(
             onPressed: () {},
