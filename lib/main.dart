@@ -17,14 +17,21 @@ class FlutterTutorialApp extends StatelessWidget {
               ),
             ),
             centerTitle: true,
-            backgroundColor: Colors.brown[300],
+            backgroundColor: Colors.blue,
           ),
-          body: Image(
-            image: AssetImage("assets/images/img1.png"),
+          body: Container(
+            color: Colors.blue,
+            margin: EdgeInsets.all(20),
+            padding: EdgeInsets.all(50),
+            transform: Matrix4.rotationZ(-0.1),
+            child: Text(
+              "ololol",
+              style: TextStyle(fontSize: 120.0, color: Colors.black),
+            ),
           ),
           floatingActionButton: FloatingActionButton(
             onPressed: () {},
-            backgroundColor: Colors.deepOrange,
+            backgroundColor: Colors.blue,
             child: Text("ADd"),
           )),
     );
