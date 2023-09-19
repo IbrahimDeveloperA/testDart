@@ -19,47 +19,28 @@ class FlutterTutorialApp extends StatelessWidget {
             centerTitle: true,
             backgroundColor: Colors.blue,
           ),
-          body: Container(
-            child: Container(
-              margin: EdgeInsets.all(100),
-              padding: EdgeInsets.all(100),
-              child: Text(
-                "",
-                style: TextStyle(fontSize: 26.0, color: Colors.black),
+          body: Column(
+            //Виджет Column   это LinerLayout
+            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+            // можно манипулировать гравити внутри контейнера
+            crossAxisAlignment: CrossAxisAlignment.stretch,
+            children: [
+              Container(
+                color: Colors.green,
+                padding: EdgeInsets.all(20),
+                child: Text("Text"),
               ),
-              decoration: BoxDecoration(
-                  color: Colors.green,
-                  //    borderRadius: BorderRadius.all(Radius.circular(200))
-                  //  borderRadius: BorderRadius.circular(20)
-                  shape: BoxShape.circle,
-                  border: Border.all(
-                    width: 15,
-                    color: Colors.pink,
-                  ),
-              boxShadow: [
-                BoxShadow(
-                  color: Colors.red,
-                  spreadRadius: 10, // количестыо тени
-                  blurRadius: 10, // контролирует четкость тени
-                  offset: Offset(3,3) //контроль тени
-                )
-              ],
-
+              Container(
+                color: Colors.blue,
+                padding: EdgeInsets.all(30),
+                child: Text("Text"),
               ),
-            ),
-            alignment: Alignment.center,
-            decoration: BoxDecoration(
-              // gradient: RadialGradient(
-              //     colors:[
-              //       Colors.red,
-              //       Colors.black
-              //     ]
-              // ),
-              image: DecorationImage(
-                image: AssetImage("assets/images/img1.png"),
-                fit: BoxFit.cover  //что типо scylyTypy
+              Container(
+                color: Colors.green,
+                padding: EdgeInsets.all(40),
+                child: Text("Text"),
               )
-            ),
+            ],
           ),
           floatingActionButton: FloatingActionButton(
             onPressed: () {},
