@@ -1,9 +1,7 @@
 import 'package:dio/dio.dart';
 import 'package:untitled/repositories/crypto_coin/crypro_coins.dart';
-import 'package:untitled/repositories/crypto_coin/models/models.dart';
 
 class CryptoCoinRepository implements AbstractCoinsRepository {
-
   CryptoCoinRepository({required this.dio});
   final Dio dio;
 
@@ -28,6 +26,7 @@ class CryptoCoinRepository implements AbstractCoinsRepository {
     return cryptoCoinsList;
   }
 }
+
 //    final cryptoCoinsList = data.entries.map((e) => CryptoCoin(
 //           name: e.key,
 //           priceInUSD: (e.value as Map<String, dynamic>)['USD'],
